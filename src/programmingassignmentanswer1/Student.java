@@ -8,7 +8,7 @@ import java.util.Scanner;
 
 /**
  *
- * @author User
+ * @author ST10287087
  */
 
 public class Student {
@@ -41,7 +41,7 @@ public class Student {
         return studentAge;
     }
 
-    public void setStudentAge(int studentAge) {
+    public void setStudentAge(int studentAge) {//checks if user is 16 years or older
         if (studentAge >= 16) {
             this.studentAge = studentAge;
         } else {
@@ -65,7 +65,7 @@ public class Student {
         this.studentCourse = studentCourse;
     }
 
-    public static void SaveStudent() {
+    public static void SaveStudent() {//method to save students information into the program   
         Student student = new Student();
 
         System.out.println("Please enter the name of the student you would like to add");
@@ -98,7 +98,7 @@ public class Student {
         studentCounter++;
     }
 
-      public static void SearchStudent()
+      public static void SearchStudent()//method that allows a user to search a student in the program
     {
         String userEnteredID;
         System.out.println("Enter the student id to search");
@@ -115,7 +115,7 @@ public class Student {
         }
     
     
-    public static void DeleteStudent()
+    public static void DeleteStudent()//method that allows a user to remove a student from a program
     {
         String requestedDel;
         String answerConfirmation;
@@ -136,7 +136,7 @@ public class Student {
         } System.out.println("Sorry! student ID " + requestedDel + " could not be found" );
     }
     
-    public static void StudentReport()
+    public static void StudentReport()//methods thats prints all a students information
     {
         for(String studentInfoList : studentInformation )
         {
@@ -145,9 +145,15 @@ public class Student {
         }
     }
     
-    public static void ExitStudentApplication ()
-    {
-          System.out.println("Exiting Student Management Application.");
+    public static void ExitStudentApplication ()//method thats exists the apllication
+ {
+         
+
+
+
+    
+    
+      System.out.println("Exiting the Student Application.");
         System.exit(0);
     }
 }
