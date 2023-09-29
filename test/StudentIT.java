@@ -5,7 +5,7 @@
 
 /**
  *
- * @author User
+ * @author ST10287087
  */
 import org.junit.After;
 import org.junit.AfterClass;
